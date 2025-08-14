@@ -9,7 +9,7 @@ function WebLayout() {
       <div className="w-full absolute">
         <Header />
       </div>
-      <main className="">
+      <main className="min-h-[calc(100vh-88px)]">
         <div className="max-w-[1444px] mx-auto w-full">
           <Outlet />
         </div>

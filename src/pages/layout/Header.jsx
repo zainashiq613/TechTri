@@ -10,7 +10,7 @@ const pages = [
   },
   {
     id: 2,
-    title: 'Experience',
+    title: 'About',
     link: ['/about'],
     icon: null,
   },
