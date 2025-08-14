@@ -1,1 +1,20 @@
 @import 'tailwindcss';
+@import 'tailwindcss';
+
+:root {
+  --poppins: 'Poppins', sans-serif;
+  --primary: #ffffff;
+  --secondary: #078e9b;
+  --aside-grad: linear-gradient(180deg, #039099 0%, rgba(197, 31, 255, 0.88) 111.68%);
+}
+
+@theme {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+}
+
+@layer utilities {
+  .bg-aside-grad {
+    background: var(--aside-grad);
+  }
+}
