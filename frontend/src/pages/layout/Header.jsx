@@ -15,7 +15,7 @@ const Header = () => {
     <nav className="bg-white z-50 border-gray-200 dark:border-gray-600 dark:bg-gray-900">
       <div className="flex z-50 flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
         <div className="text-white flex items-center gap-2">
-          <img className="w-12 rounded-full" src="/public/TechTri.jpg" alt="" />
+          <img className="w-12 rounded-full" src="/TechTri.jpg" alt="" />
           <div className="flex flex-col">
             <h3 className="text-xl leading-5 font-bold">TechTri</h3>
             <p className="text-xs">Think, Build, Innovate</p>
