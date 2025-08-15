@@ -6,7 +6,7 @@ import Footer from '../pages/layout/Footer';
 function WebLayout() {
   return (
     <section>
-      <div className="w-full absolute">
+      <div className="w-full fixed">
         <Header />
       </div>
       <main className="min-h-[calc(100vh-88px)]">

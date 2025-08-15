@@ -1,53 +1,38 @@
-import { Link } from 'react-router-dom';
 import React from 'react';
 
-const FooterLinks = [
-  { title: 'Home', to: '/' },
-  { title: 'Experience', to: '/experience' },
-  { title: 'Projects', to: '/project' },
-  { title: 'Contact', to: '/contact' },
-];
-
-function Footer() {
+const Footer = () => {
   return (
-    <footer className=" text-white px-[150px]">
-      <div className="max-w-[1440px] p-6 bg-black mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-        {/* Left Side: Logo or Name */}
-        <div className="text-lg font-semibold">
-          © {new Date().getFullYear()} MyPortfolio. All rights reserved.
+    <footer className="bg-gray-900 text-white py-6">
+      <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+        {/* Company Name */}
+        <div className="text-lg font-semibold">TechTri</div>
+
+        {/* Links */}
+        <div className="flex space-x-6 mt-4 md:mt-0">
+          <a href="#home" className="hover:text-cyan-400">
+            Home
+          </a>
+          <a href="#about" className="hover:text-cyan-400">
+            About
+          </a>
+          <a href="#services" className="hover:text-cyan-400">
+            Services
+          </a>
+          <a href="#projects" className="hover:text-cyan-400">
+            Projects
+          </a>
+          <a href="#contact" className="hover:text-cyan-400">
+            Contact
+          </a>
         </div>
 
-        {/* Middle: Links */}
-        <div className="flex gap-6">
-          {FooterLinks.map((link, index) => (
-            <Link key={index} to={link.to} className="hover:text-primary transition-colors">
-              {link.title}
-            </Link>
-          ))}
-        </div>
-
-        {/* Right Side: Social Icons */}
-        <div className="flex gap-4">
-          <a
-            href="https://github.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-primary transition-colors"
-          >
-            GitHub
-          </a>
-          <a
-            href="https://linkedin.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-primary transition-colors"
-          >
-            LinkedIn
-          </a>
+        {/* Copyright */}
+        <div className="mt-4 md:mt-0 text-sm text-gray-400">
+          © {new Date().getFullYear()} TechTri. All rights reserved.
         </div>
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
