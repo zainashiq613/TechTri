@@ -5,8 +5,8 @@ const Header = () => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   return (
-    <nav className="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900">
-      <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+    <nav className="bg-white z-50 border-gray-200 dark:border-gray-600 dark:bg-gray-900">
+      <div className="flex z-50 flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
         {/* Logo */}
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="TechTri Logo" />

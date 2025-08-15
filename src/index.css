@@ -1,8 +1,13 @@
 @import 'tailwindcss';
 
+html,
+body {
+  background-color: rgb(252, 247, 247);
+}
+
 :root {
   --poppins: 'Poppins', sans-serif;
-  --primary: #ffffff;
+  --primary: #cc7070;
   --secondary: #078e9b;
   --aside-grad: linear-gradient(180deg, #039099 0%, rgba(197, 31, 255, 0.88) 111.68%);
 }
